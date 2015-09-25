@@ -1,4 +1,6 @@
 # Arrays and Pointers
+
+### Overview of Arrays
 - The ascii string of text "abc123" would be represented as:
   - `0110 0001 0110 0010 0110 0011 0011 0001 0011 0010 0011 0011 0000 0000` ← null terminator
 - A string of text is a simple form of an array, a collection of single byte chars

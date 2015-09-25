@@ -16,16 +16,18 @@
 - Functions are given their own places in memory to be pointed to throughout the program
 
 ## Some Rules for C
-- printing functionality comes packaged with c in the standard input/output library
-- you can include this with `#include <stdio.h>`
+
+###### Including Files
+- Printing functionality comes packaged with c in the standard input/output library
+- You can include this with `#include <stdio.h>`
 - By including something you're basically giving your program access to the functions and variables declared in your included file
 
 ###### Function declarations
 - `return_type function_name(arguments) {}`
-- void inside of the parenthesis would mean that there will be no arguments passed in
-- must be a `main` function to be run in any given file
+- `void` as the argument would mean that there will be no arguments passed in, void before the function name would mean no return value
+- Must be a `main` function to be run in any given file
   - ie. `int main(void) { }`
-- explicit returns
+- Explicit returns
 
 ###### Calling a Function
 - `function_name(arguments);`
