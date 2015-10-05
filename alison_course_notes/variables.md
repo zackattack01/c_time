@@ -1,20 +1,20 @@
 # Variables
 - When declaring a variable, you must indicate the size, and the data type, as well as the name that you want to refer to the data by
-- so, for `short unsigned int total = 5;`
+- So, for `short unsigned int total = 5;`
   - `0000 0000 0000 0101`
   - `short` still indicates 2 bytes here, so there is quite a bit of unused memory
-  - there is no bit used for signing
+  - There is no bit used for signing
 
-- a declared variable can store the return value of a function that returns the same data type as the declared variable
-  - for `int total = 5;`, total can be reassigned to store the return value of any function that returns an int
-  - for `total = total + printf("something");` total would be reassigned to equal 14, because printf returns the number of characters that it printed
+- A declared variable can store the return value of a function that returns the same data type as the declared variable
+  - For `int total = 5;`, total can be reassigned to store the return value of any function that returns an int
+  - For `total = total + printf("something");` total would be reassigned to equal 14, because printf returns the number of characters that it printed
 
-- to print a variable `printf("Displaying a number, %d", total)`, the second arg is placed in the %d's place
-  - this can be done with an arbitrary number of %d's
+- To print a variable `printf("Displaying a number, %d", total)`, the second arg is placed in the %d's place
+  - This can be done with an arbitrary number of %d's
 
 ### Terminating Strings of Text
-- when a function is running through a string, how does it know when it has reached the end and what data actually belongs to the string
-- usually you use a terminating byte, which is a string of all zeros (null character)
+- When a function is running through a string, how does it know when it has reached the end and what data actually belongs to the string?
+- Usually you use a terminating byte, which is just eight zeros (null character)
   - Function knows to stop when it hits the null character
   - The size of the string of text is whatever you had plus the null character
   - If a string is not properly terminated, every following byte in memory will be interpreted and printed as an ascii character (until a null terminator is reached)
@@ -28,7 +28,7 @@
 - `%u` is used for an unsigned int
 - `%c` can be used for a SINGLE character
 - `%s` can be used for a null terminated string
-  - any string that you initialize enclosed with double quotes will include a null terminator by default
-    - so "123" is 4 bytes (one for each char and one null terminator)
-- important to note that a single char is not null terminated, it is one byte
-- placeholders must be matched up in order of the arguments passed in
+  - Any string that you initialize enclosed with double quotes will include a null terminator by default
+    - So "123" is 4 bytes (one for each char and one null terminator)
+- Important to note that a single char is not null terminated, it is one byte
+- Placeholders in `printf` must be matched up in order of the arguments passed in
